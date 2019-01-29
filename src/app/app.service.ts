@@ -17,7 +17,7 @@ import { log } from "util";
   providedIn: "root"
 })
 export class AppService {
-  private url = "http://localhost:3000/api/v1";
+  private url = "http://94.237.72.184:3000/api/v1";
   constructor(public http: HttpClient) {}
 
   public signupFunction(data): Observable<any> {
