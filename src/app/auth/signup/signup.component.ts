@@ -22,7 +22,7 @@ export class SignupComponent implements OnInit {
   public password: any;
   public repeatPassword: any;
   public apiKey: any;
-  public countryCodes: any[] = countryCodes;
+  public countryCodes: any = countryCodes;
   constructor(
     public appService: AppService,
     private toastr: ToastrService,

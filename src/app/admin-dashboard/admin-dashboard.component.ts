@@ -9,7 +9,7 @@ import { log } from "util";
   styleUrls: ["./admin-dashboard.component.css"]
 })
 export class AdminDashboardComponent implements OnInit {
-  private userObjects: any[];
+  public userObjects: any[];
   private users: any[];
 
   constructor(private appService: AppService, private router: Router) {}
