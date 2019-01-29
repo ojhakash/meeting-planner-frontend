@@ -1,0 +1,6 @@
+.list-group-item:hover {
+  cursor: pointer;
+}
+.header {
+  text-align: center;
+}

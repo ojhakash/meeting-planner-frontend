@@ -1,0 +1,16 @@
+<app-navbar></app-navbar>
+<div class="container jumbotron">
+  <div class="col-md-12 mt-5">
+    <h2 class="display-5 header">Users List</h2>
+    <ul class="list-group list-hover">
+      <li
+        class="list-group-item list-group-item-action d-flex justify-content-between align-items-center"
+        *ngFor="let user of userObjects"
+        (click)="goToCalender(user.userId)"
+      >
+        <b>{{ user.firstName }} {{ user.lastName }}</b>
+        <span class="badge badge-primary badge-pill">{{ user.email }}</span>
+      </li>
+    </ul>
+  </div>
+</div>
