@@ -23,7 +23,7 @@ export class NavbarComponent implements OnInit {
     private toastr: ToastrService,
     private router: Router
   ) {
-    this.socket = io("http://localhost:3000");
+    this.socket = io("http://94.237.72.184:3000");
     this.socket.emit("set-user", { userId: localStorage.getItem("userId") });
     this.socket.on("notification", data => {
       this.toastr.info(data.notification);
